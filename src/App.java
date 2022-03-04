@@ -15,7 +15,8 @@ public class App {
     }
 
     private static DistributeurController getDistributeurController() {
-        DistributeurController distributeurController = new DistributeurController();
+        Distributeur model = new Distributeur(null);
+        DistributeurController distributeurController = new DistributeurController(model);
         return distributeurController;
     }
 }

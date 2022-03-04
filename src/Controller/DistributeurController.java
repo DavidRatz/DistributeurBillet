@@ -1,10 +1,16 @@
 package Controller;
 
+import Model.Distributeur;
 import Model.StateController;
 
 public class DistributeurController implements StateController {
     private StateController state;
+    private Distributeur model;
     
+    public DistributeurController(Distributeur model) {
+        this.model = model;
+    }
+
     @Override
     public void start() {
         System.out.println("DistributeurController.start()");
